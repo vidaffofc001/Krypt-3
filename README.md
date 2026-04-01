@@ -1,2 +1,3 @@
 # Krypt-3
-Krypt Shop
+Krypt Shop primeira versão
+
