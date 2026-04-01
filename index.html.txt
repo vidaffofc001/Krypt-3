@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <title>Krypt | Apps & Games</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #0f0f0f; color: white; margin: 0; }
+        header { padding: 20px; text-align: center; background: #1a1a1a; border-bottom: 2px solid #6200ee; }
+        .container { padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; }
+        .card { background: #222; padding: 15px; border-radius: 12px; text-align: center; transition: 0.3s; }
+        .card:hover { transform: scale(1.05); border: 1px solid #6200ee; }
+        .card img { width: 80px; border-radius: 15px; }
+        .btn-download { display: block; margin-top: 10px; padding: 8px; background: #6200ee; color: white; text-decoration: none; border-radius: 5px; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>KRYPT</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="https://via.placeholder.com/80" alt="Icon">
+        <h3>Super Game</h3>
+        <p>Ação e Aventura</p>
+        <a href="#" class="btn-download">Instalar</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/80" alt="Icon">
+        <h3>Krypt Chat</h3>
+        <p>Comunicação</p>
+        <a href="#" class="btn-download">Instalar</a>
+    </div>
+</div>
+
+<script>
+    // Registro do Service Worker para o PWA funcionar offline
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+    }
+</script>
+</body>
+</html>
